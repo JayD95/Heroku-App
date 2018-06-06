@@ -1,0 +1,10 @@
+#frame {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 1fr;
+	
+	}
+
+#myLocation{grid-column:1; grid-row:1; width:100%;}
+#weatherInfo{grid-column:2; grid-row:1; width:100%;}
+#countryList{grid-column:1; grid-row:2; width:200%}

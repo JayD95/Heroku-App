@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Les 6 Practicum 1</title>
+</head>
+<body>
+	<p>Input: <input type="text" id="inp" onkeyup="store()"></p>
+	<div id="result"></div>
+
+	<script type="text/javascript">
+		function store(){
+			var input = document.getElementById("inp");
+			window.localStorage.setItem("inhoud", input.value);
+			document.getElementById("result").innerHTML = localStorage.getItem("inhoud");
+		}
+
+	</script>
+
+</body>
+</html>

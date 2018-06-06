@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<script src="task.js"></script>
+	<p id="test">Hi</p>
+	<div id="shopitems"></div>
+	
+	<script type="text/javascript">
+	var items = [ { name : "Intel Core I7", price : 366.00 },
+		{ name : "GIGABYTE GeForce GTX 1080 TI", price : 754.82 },
+		{ name : "Dell Ultrasharp U2515H", price : 340.15 } ];
+	
+	for (const i of items){
+		document.querySelector("#shopitems").innerHTML = '<button id="bekijk" type="submit" value="Bekijk">' ;
+		console.log(i);
+		}
+	
+	function store(){	
+		var inp = document.getElementById("shopitems");
+		window.localStorage.setItem("inhoud", inp.value);
+	}
+	document.getElementById("bekijk").addEventListener("click", store);
+	</script>
+
+</body>
+</html>

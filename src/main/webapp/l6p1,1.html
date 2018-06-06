@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Les 6 preacticum 1.1</title>
+</head>
+<body>
+	<p>Receive:</p> <label id="lbl" ></label>
+	<h2>Laatst bekeken artikel:</h2>
+	<div id="visited"></div>
+
+	<script type="text/javascript">
+	window.addEventListener('storage', function(event){
+		var lclstorage = window.localStorage.getItem("inhoud");
+		console.log(lclstorage);
+		document.getElementById("lbl").innerHTML = lclstorage;
+		
+	});
+	</script>
+	
+	<script type="text/javascript">
+	window.addEventListener('storage', function(event){
+		var lclstorage = window.localStorage.getItem("inhoud");
+		document.getElementById("visited").innerHTML = lclstorage.name;	
+	});
+	</script>
+	
+
+</body>
+</html>
